@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    
+    
+    <EditText
+        android:id="@+id/nomeUsuario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:inputType="text"
+        android:hint="@string/Nome"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/idadeUsuario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="60dp"
+        android:inputType="numberDecimal"
+        android:hint="@string/Idade"
+        app:layout_constraintEnd_toEndOf="@+id/nomeUsuario"
+        app:layout_constraintStart_toStartOf="@+id/nomeUsuario"
+        app:layout_constraintTop_toTopOf="@+id/nomeUsuario"
+        />
+
+    <EditText
+        android:id="@+id/pesoUsuario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:inputType="numberDecimal"
+        android:hint="@string/Peso"
+        app:layout_constraintEnd_toEndOf="@+id/idadeUsuario"
+        app:layout_constraintStart_toStartOf="@+id/idadeUsuario"
+        app:layout_constraintTop_toTopOf="@+id/idadeUsuario"
+        />
+
+    <EditText
+        android:id="@+id/alturaUsuario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:inputType="numberDecimal"
+        android:hint="@string/Altura"
+        app:layout_constraintEnd_toEndOf="@+id/pesoUsuario"
+        app:layout_constraintStart_toStartOf="@+id/pesoUsuario"
+        app:layout_constraintTop_toTopOf="@+id/pesoUsuario"
+        />
+
+    <Button
+        android:id="@+id/confirma"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="102dp"
+        android:layout_marginEnd="102dp"
+        android:text="Calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4"
+        />
+
+    <TextView
+        android:id="@+id/feedback"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        tools:text="@string/Resultado"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/confirma"
+        app:layout_constraintStart_toStartOf="@+id/confirma"
+        app:layout_constraintTop_toTopOf="@+id/confirma"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

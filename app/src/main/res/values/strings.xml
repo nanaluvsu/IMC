@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">IMC</string>
+
+    <string name="Nome">Insira seu nome</string>
+    <string name="Idade">Insira sua idade</string>
+    <string name="Peso">Insira seu peso</string>
+    <string name="Altura">Insira sua altura</string>
+    <string name="Resultado">:3</string>
+</resources>
