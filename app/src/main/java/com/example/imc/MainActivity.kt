@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
             val nome = binding.nomeUsuario.text.toString()
 
             if (peso != null && altura != null) {
-
+                calcIMC(nome,idade,altura,peso)
             } else {
                 binding.feedback.text = "ERRO: Peso e/ou altura não são válidos."
             }
